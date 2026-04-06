@@ -1,6 +1,6 @@
 [submodule "darkly"]
 	path = darkly
-	url = git@github.com:STC71/42_darkly.git
+	url = https://github.com/STC71/42_darkly.git
 [submodule "camagru"]
 	path = camagru
-	url = git@github.com:STC71/42_camagru.git
+	url = https://github.com/STC71/42_camagru.git
