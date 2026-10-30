@@ -1,227 +1,134 @@
-# 🌐 Web & Database Projects
+# 🌐 Web & Database — 42 Outer Core
 
-Esta carpeta contiene proyectos del currículo de Desarrollo Web y Bases de Datos de 42 School, enfocados en aplicaciones full-stack, arquitectura web y seguridad.
+Proyectos del dominio **Web y bases de datos** del currículo Outer Core en **[42 Málaga](https://www.42malaga.com/)**: aplicaciones full-stack, arquitectura MVC, Docker y seguridad web (OWASP).
 
----
+[![42](https://img.shields.io/badge/42-Málaga-00babc?style=for-the-badge&logo=42)](https://www.42malaga.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docs.docker.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/doc/)
 
-## 📚 Projects Overview
-
-| Project | Type | Difficulty | Status |
-|---------|------|------------|--------|
-| [Camagru](./camagru/) | Full-Stack Web App | ⭐⭐⭐ | ✅ Complete |
-| [Darkly](./darkly/) | Web Security Audit | ⭐⭐⭐ | ✅ Complete |
+> Este directorio es el repositorio **[42_web_database](https://github.com/STC71/42_web_database)** y, en el monorepo **[42_Outer_Core](https://github.com/STC71/42_Outer_Core)**, aparece como **submódulo** `web_database/`.
 
 ---
 
-## 📸 [Camagru](./camagru/) - Instagram-like Web Application
+## Clonar correctamente
 
-Aplicación web full-stack con captura de fotos desde webcam, edición con stickers y funcionalidades sociales.
-
-### 🎯 Key Features
-- 📸 **Webcam Capture**: getUserMedia API for real-time photo capture
-- 🎨 **Sticker Overlay**: Real-time image editing with stickers
-- 👥 **Authentication System**: Complete user management (register, login, email verification)
-- 💬 **Social Interaction**: Likes, comments with AJAX
-- 📤 **File Upload**: Secure file validation and handling
-- 📱 **Responsive Design**: Mobile, tablet, desktop support
-- ✨ **Bonus Features**: Live preview, infinite scroll, animated GIFs
-
-### 🛠️ Tech Stack
-- **Backend**: PHP 8.2 (Custom MVC framework)
-- **Database**: MySQL 8.0
-- **Frontend**: JavaScript Vanilla, HTML5/CSS3
-- **DevOps**: Docker, Docker Compose
-- **Architecture**: MVC Pattern, RESTful API
-
-### 📖 Documentation
-- 19 detailed README files
-- 80+ educational videos in Spanish
-- Complete project overview and quickstart guide
-
-[📖 Full Documentation](./camagru/README.md)
-
----
-
-## 🌑 [Darkly](./darkly/) - Web Security Audit
-
-Proyecto de introducción a ciberseguridad web y OWASP. Audita un sitio web vulnerable para descubrir 14 vulnerabilidades de seguridad comunes.
-
-### 🎯 Objectives
-- 🔍 **Security Audit**: Discover 14 web vulnerabilities
-- 📝 **Documentation**: Comprehensive exploitation documentation
-- 🎓 **Learning**: Understand OWASP Top 10 vulnerabilities
-- 🛡️ **Prevention**: Learn secure coding practices
-
-### 🔓 Vulnerabilities Covered
-1. **SQL Injection** (Basic & Advanced)
-2. **Cross-Site Scripting** (XSS - Basic & Advanced)
-3. **File Inclusion** vulnerabilities
-4. **Cookie Manipulation**
-5. **HTTP Header Spoofing**
-6. **Authentication Bypass** (htpasswd, Brute Force)
-7. **File Upload** bypass
-8. **Open Redirect**
-9. **Information Disclosure** (Hidden files)
-10. **Survey Manipulation**
-11. **Account Recovery** vulnerabilities
-
-### 🛠️ Skills Developed
-- Web vulnerability assessment (14 vulnerabilities)
-- SQL injection techniques (basic & advanced)
-- XSS exploitation (reflected & data URI)
-- Authentication bypass (cookies, brute force, reset password)
-- HTTP header spoofing and manipulation
-- File upload bypass techniques
-- Path traversal exploitation
-- Information disclosure discovery
-- Security documentation and reporting
-- OWASP Top 10 understanding and analysis
-- Automatic flag validation with evaluation.sh
-
-### 📖 Documentation
-- [README.md](./darkly/README.md) - Complete project guide with Quick Start
-- [VULNERABILITIES_INDEX.md](./darkly/VULNERABILITIES_INDEX.md) - Quick reference table
-- [QUICK_SOLUTIONS.md](./darkly/QUICK_SOLUTIONS.md) - Payloads and commands
-- [evaluation.sh](./darkly/evaluation.sh) - Automatic flag validation script
-- Individual folder for each vulnerability with complete documentation
-
-### 🚀 Getting Started
 ```bash
-cd darkly/
-./evaluation.sh  # Automated validation of all flags
+# Solo este dominio
+git clone --recurse-submodules https://github.com/STC71/42_web_database.git
+
+# Monorepo Outer Core (incluye este submódulo)
+git clone --recurse-submodules https://github.com/STC71/42_Outer_Core.git
+cd 42_Outer_Core
+git submodule update --init --recursive
 ```
 
-[📖 Full Documentation](./darkly/README.md)
+Sin `--recurse-submodules`, la carpeta `web_database/` puede quedar vacía o incompleta.
 
 ---
 
-## 🎓 Learning Outcomes
+## Proyectos
 
-### Web Development (Camagru)
-- ✅ Full-stack web application architecture
-- ✅ MVC design pattern implementation
-- ✅ RESTful API design
-- ✅ Database design and optimization
-- ✅ Authentication and session management
-- ✅ Real-time media handling (webcam)
-- ✅ AJAX and asynchronous JavaScript
-- ✅ Responsive web design
-- ✅ Docker containerization
-
-### Web Security (Darkly)
-- ✅ OWASP Top 10 vulnerabilities
-- ✅ SQL injection attacks
-- ✅ Cross-Site Scripting (XSS)
-- ✅ Authentication vulnerabilities
-- ✅ Security assessment methodology
-- ✅ Vulnerability documentation
-- ✅ Secure coding practices
-- ✅ HTTP protocol security
-- ✅ Attack prevention strategies
+| Proyecto | Tipo | Estado | Entrada |
+|----------|------|--------|---------|
+| **[Camagru](./camagru/)** | App web full-stack (tipo Instagram) | ✅ Completado + bonus | [README](./camagru/README.md) · [QUICKSTART](./camagru/QUICKSTART.md) |
+| **[Darkly](./darkly/)** | Auditoría de seguridad web | ✅ Completado + bonus | [README](./darkly/README.md) |
 
 ---
 
-## 🚀 Quick Start
+## 📸 Camagru
 
-### Camagru
+Aplicación web **sin framework PHP** (requisito de evaluación): captura con webcam, stickers, subida de archivos, galería pública, likes, comentarios, autenticación con verificación por email y preferencias de usuario. Containerización Docker (“works as is”).
+
+### Funcionalidad alineada al subject / eval
+
+| Área | Contenido |
+|------|-----------|
+| Auth | Registro, email de verificación, login/logout, reset de contraseña |
+| Editor | Webcam o upload, stickers, composición **en el servidor** (GD) |
+| Galería | Pública, likes y comentarios (sesión), paginación / scroll |
+| Notificaciones | **Email al autor de la foto solo cuando hay un comentario nuevo** (no por like); preferencia `notify_comments` activa por defecto y desactivable en Ajustes |
+| Seguridad | `password_hash`, PDO + prepared statements, CSRF, escape XSS |
+| Bonus | AJAX likes/comentarios, preview + drag del sticker, infinite scroll, **GIF animado (Imagick)** |
+| Extra | i18n ES/EN/PT/DE/FR (banderas), Makefile, `test_auto.sh` / `test_eval.sh`, baja de cuenta opcional |
+
+### Stack
+
+- **Backend:** PHP 8.2, MVC propio (`app/controllers`, `models`, `views`, `core`)  
+- **BD:** MySQL 8, PDO  
+- **Frontend:** JavaScript vanilla, HTML5/CSS3  
+- **DevOps:** Docker Compose (web + db + phpMyAdmin)
+
+### Arranque rápido
+
 ```bash
 cd camagru
-make          # Build and start the application
-# Access at: http://localhost:8080
+make setup          # o cp .env.example .env
+make all            # build + up
+# App: http://localhost:8080
+make test-full      # suite automática
+make ext            # pdo_mysql / gd / imagick
 ```
 
-### Darkly
-```bash
-cd darkly
-# Boot the Darkly_i386.iso in a VM
-# Access at: http://172.16.60.128
-# Follow IMPLEMENTATION_GUIDE.md for vulnerability discovery
+Guía detallada: **[camagru/QUICKSTART.md](./camagru/QUICKSTART.md)**.
+
+### Documentación en el árbol de Camagru
+
+| Documento | Uso |
+|-----------|-----|
+| [README.md](./camagru/README.md) | Visión general y mapa de docs |
+| [QUICKSTART.md](./camagru/QUICKSTART.md) | Docker, Mailtrap, permisos |
+| [COMPLIANCE.md](./camagru/COMPLIANCE.md) | Checklist subject / hoja de evaluación |
+| [PROJECT_OVERVIEW.md](./camagru/PROJECT_OVERVIEW.md) | Arquitectura |
+| [php.md](./camagru/php.md) · [js.md](./camagru/js.md) · [css.md](./camagru/css.md) · [sql.md](./camagru/sql.md) · [docker.md](./camagru/docker.md) | Guías tech con ejemplos del repo |
+| [app/](./camagru/app/README.md) · [app/lang/](./camagru/app/lang/README.md) | MVC e i18n |
+| README por subcarpeta (`controllers`, `public`, …) | De lo general a lo concreto |
+
+Repo dedicado (mismo proyecto): [STC71/42_camagru](https://github.com/STC71/42_camagru).
+
+---
+
+## 🌑 Darkly
+
+Introducción a **seguridad web** y mentalidad OWASP: auditoría de un sitio vulnerable y documentación de explotación / mitigación.
+
+### Objetivos
+
+- Descubrir y documentar vulnerabilidades web clásicas  
+- Entender impacto y vector de ataque  
+- Interiorizar buenas prácticas de código seguro  
+
+### Familias de vulnerabilidades cubiertas (resumen)
+
+SQL Injection, XSS, File Inclusion, manipulación de cookies, spoofing de cabeceras HTTP, bypass de autenticación, upload inseguro, open redirect, information disclosure, manipulación de surveys, recuperación de cuenta, etc.
+
+### Documentación
+
+- [README del proyecto](./darkly/README.md)  
+- [Guía de implementación](./darkly/IMPLEMENTATION_GUIDE.md) (si está presente en el árbol)
+
+---
+
+## Relación con Outer Core
+
+```
+42_Outer_Core/
+└── web_database/          ← submódulo → 42_web_database
+    ├── README.md          ← este archivo
+    ├── camagru/
+    └── darkly/
 ```
 
----
-
-## 📂 Project Structure
-
-```
-web_database/
-├── README.md                  # This file
-│
-├── camagru/                   # Instagram-like web app
-│   ├── app/                   # Application source code
-│   ├── config/                # Configuration files
-│   ├── database/              # Database migrations
-│   ├── public/                # Public assets
-│   ├── docker-compose.yml     # Docker configuration
-│   └── README.md              # Project documentation
-│
-└── darkly/                    # Web security audit
-    ├── 01_sql_injection_basic/
-    ├── 02_sql_injection_advanced/
-    ├── ... (14 vulnerability folders)
-    ├── IMPLEMENTATION_GUIDE.md
-    └── README.md
-```
+Índice global de proyectos: [README de 42_Outer_Core](https://github.com/STC71/42_Outer_Core/blob/main/README.md).
 
 ---
 
-## 🛡️ Security Considerations
+## Autor
 
-### Camagru Security Features
-- ✅ Password hashing (bcrypt)
-- ✅ SQL injection prevention (PDO prepared statements)
-- ✅ XSS prevention (output escaping)
-- ✅ CSRF token protection
-- ✅ File upload validation
-- ✅ Email verification
-- ✅ Secure session handling
-
-### Darkly Security Lessons
-- 🔍 Understanding common vulnerabilities
-- 🛡️ Learning prevention techniques
-- 📝 Documenting security findings
-- 🎓 Ethical hacking principles
+**sternero** · 42 Málaga · [GitHub @STC71](https://github.com/STC71)
 
 ---
 
-## 📚 Resources
-
-### Web Development
-- **PHP Official Documentation**: https://www.php.net/docs.php
-- **MySQL Documentation**: https://dev.mysql.com/doc/
-- **MDN Web Docs**: https://developer.mozilla.org/
-- **Docker Documentation**: https://docs.docker.com/
-
-### Web Security
-- **OWASP Top 10**: https://owasp.org/www-project-top-ten/
-- **OWASP Testing Guide**: https://owasp.org/www-project-web-security-testing-guide/
-- **PortSwigger Academy**: https://portswigger.net/web-security
-- **SQL Injection Guide**: https://owasp.org/www-community/attacks/SQL_Injection
-
----
-
-## 🤝 Contributing
-
-Improvements and suggestions are welcome:
-1. Document the improvement clearly
-2. Test thoroughly
-3. Follow existing code style
-4. Update documentation
-
----
-
-## 📝 Notes
-
-- **Camagru** is production-ready with comprehensive security measures
-- **Darkly** is intentionally vulnerable for educational purposes
-- Never deploy Darkly in a production environment
-- Always practice responsible disclosure with security findings
-
----
-
-<div align="center">
-
-**Hecho con ❤️ por sternero en 42 Málaga**
-
-[⬅️ Volver al repositorio principal](../README.md)
-
-</div>
+<p align="center">
+  <b>Hecho con ❤️ por sternero en 42 Málaga — Octubre 2026</b>
+</p>
