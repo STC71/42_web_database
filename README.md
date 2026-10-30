@@ -220,7 +220,7 @@ Improvements and suggestions are welcome:
 
 <div align="center">
 
-**Built with ❤️ for learning web development and security**
+**Hecho con ❤️ por sternero en 42 Málaga**
 
 [⬅️ Volver al repositorio principal](../README.md)
 
