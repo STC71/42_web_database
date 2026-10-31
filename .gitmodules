@@ -4,3 +4,6 @@
 [submodule "camagru"]
 	path = camagru
 	url = https://github.com/STC71/42_camagru.git
+[submodule "imgs"]
+	path = imgs
+	url = https://github.com/STC71/42_imgs.git
