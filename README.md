@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./imgs/banner_00.jpg" alt="🌐 Web & Database — 42 Outer Core" width="100%">
+  <img src="./banner_00.jpg" alt="🌐 Web & Database — 42 Outer Core" width="100%">
 </p>
 
 Proyectos del dominio **Web y bases de datos** del currículo Outer Core en **[42 Málaga](https://www.42malaga.com/)**: aplicaciones full-stack, arquitectura MVC, Docker y seguridad web (OWASP).
