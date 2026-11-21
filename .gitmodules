@@ -7,3 +7,6 @@
 [submodule "imgs"]
 	path = imgs
 	url = https://github.com/STC71/42_imgs.git
+[submodule "matcha"]
+	path = matcha
+	url = https://github.com/STC71/42_matcha.git
